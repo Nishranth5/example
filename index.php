@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Login</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Sign in to X</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="overlay">
-        <div class="login-container">
-            <h1>Sign In</h1>
-            
-            <form action="./capture.php" method="POST">
-                <div class="form-group">
-                    <label for="email">Email or mobile number</label>
-                    <input type="email" id="email" placeholder="Enter your email or mobile number" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" name="password" required>
-                </div>
-                <button type="submit" class="btn">Sign In</button>
-            </form>
-
-            <div class="extra-links">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Remember me</label>
-                </div>
-                <div>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <div>
-                    <a href="#">New to Netflix? Sign up now.</a>
-                </div>
+    <div class="login-container">
+        <h1>Sign in to X</h1>
+        <form>
+            <button type="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google">
+                Sign in with Google
+            </button>
+            <button type="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                Sign in with Apple
+            </button>
+            <div class="separator">
+                <div></div>
+                <span>or</span>
+                <div></div>
             </div>
-        </div>
+            <input type="text" placeholder="Phone, email, or username">
+            <button type="submit">Next</button>
+            <a href="#" class="link">Forgot password?</a>
+        </form>
+        <a href="#" class="link">Don't have an account? Sign up</a>
     </div>
 </body>
 </html>
